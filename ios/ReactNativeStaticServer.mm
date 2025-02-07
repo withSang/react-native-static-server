@@ -122,6 +122,9 @@ RCT_REMAP_METHOD(start,
                                           NSString * const details)
     {
       if (signal != LAUNCHED) self->server = nil;
+      if (signal == LAUNCHED || signal == TERMINATED) {
+        dispatch_semaphore_signal(sem);
+      }
       if (pendingResolve == nil && pendingReject == nil) {
         [self sendEventWithName:EVENT_NAME
           body: @{
@@ -138,7 +141,6 @@ RCT_REMAP_METHOD(start,
         } else pendingResolve(details);
         pendingResolve = nil;
         pendingReject = nil;
-        dispatch_semaphore_signal(sem);
       }
     };
 
