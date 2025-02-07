@@ -1,6 +1,6 @@
 {
   "name": "@dr.pogodin/react-native-static-server",
-  "version": "0.18.0",
+  "version": "0.18.0-hotfix",
   "description": "Embedded HTTP server for React Native",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
