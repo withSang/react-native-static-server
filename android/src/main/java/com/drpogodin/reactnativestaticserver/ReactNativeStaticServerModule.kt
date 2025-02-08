@@ -107,11 +107,11 @@ class ReactNativeStaticServerModule internal constructor(context: ReactApplicati
                 event.putString("details", details)
                 emitter.emit("RNStaticServer", event)
             } else {
+                sem.release()
                 if (signal === Server.CRASHED) {
                     Errors.SERVER_CRASHED(id).reject(pendingPromise, details)
                 } else pendingPromise!!.resolve(details)
                 pendingPromise = null
-                sem.release()
             }
         }
         server!!.start()
