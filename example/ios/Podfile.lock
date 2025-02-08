@@ -22,7 +22,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - dr-pogodin-react-native-static-server (0.18.0):
+  - dr-pogodin-react-native-static-server (0.18.0-hotfix):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1788,7 +1788,7 @@ SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   dr-pogodin-react-native-fs: cf35707c3916cc570e56249c4b42a09783dbde52
-  dr-pogodin-react-native-static-server: ad5ee97a2d02f71553845f68c8dbb996517773cf
+  dr-pogodin-react-native-static-server: 224c556fcb36eabb6ffb4894f42cbe98d6baed68
   FBLazyVector: 7075bb12898bc3998fd60f4b7ca422496cc2cdf7
   fmt: 10c6e61f4be25dc963c36bd73fc7b1705fe975be
   glog: 08b301085f15bcbb6ff8632a8ebaf239aae04e6a
@@ -1855,4 +1855,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 28ab558f77988de312fdfc89b975a6bce9c68eb9
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
